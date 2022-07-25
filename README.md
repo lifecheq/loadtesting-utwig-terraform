@@ -1,3 +1,18 @@
+### What
+
+This is the terraform config used to provision one of our services.
+
+Dynatrace support ticket: https://one.dynatrace.com/hc/en-us/requests/48018
+
+The tl;dr of our issue is this:
+
+Intermittently, when the service boots, OneAgent fails to detect the memory
+settings of the container the service runs in, and this leads to all
+of our host units being allocated to this one service.
+
+Our workaround is to restart the Heroku dyno and hope that the memory
+settings are correctly read.
+
 ### FIXME
 
 This config relies on a Heroku slug being available. You'll need to
