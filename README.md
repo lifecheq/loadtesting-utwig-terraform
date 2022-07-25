@@ -1,8 +1,10 @@
 ### FIXME
 
 This config relies on a Heroku slug being available. You'll need to
-fix that to get it running. That slug includes an uberjar, as well as
-the following buildpacks:
+either build a slug separately, or fix this config to build your code
+using another method.
+
+The slug we deployed included an uberjar, as well as the following buildpacks:
 
 - heroku/jvm
 - https://github.com/Dynatrace/heroku-buildpack-dynatrace.git#v1.2
